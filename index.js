@@ -60,9 +60,9 @@ Your function should add the flavor to the front of the array and console.log th
 
 For example addFlavor("Rainbow Sherbert", originalFlavors) should return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"] */ 
 
-function addFlavor(originalFlavors){
-    return originalFlavors.unshift("Rainbow Sherbert");
-
+function addFlavor(){
+    originalFlavors.unshift("Rainbow Sherbert");
+    return originalFlavors;
 }
 console.log(addFlavor());
 
