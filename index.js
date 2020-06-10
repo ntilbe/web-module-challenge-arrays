@@ -2,7 +2,7 @@ var originalFlavors = ["Banana Nut Fudge",
     "Black Walnut",
     "Burgundy Cherry",
    "Butterscotch Ribbon",
-    "Cherry Macaron",
+    "Cherry Macaroon",
     "Chocolate",
     "Chocolate Almond",
     "Chocolate Chip",
@@ -39,12 +39,15 @@ Your function should return a boolean TRUE if the length of the array is 31 and 
 To save you from having to count the items above, you can assume that length of originalFlavors is 31. You may also want to test your function by creating and passing an array of a different length, to make sure it returns FALSE if length is not 31. 
 
 i.e. is31Flavors(originalFlavors) will return TRUE.*/
-
-function is31Flavors(/*code here*/){
-
-    /*code here*/
-
+//TO DO: To make it more usable, pass in a placeholder in place of originalFlavors, so you can pass in any array and function would still work
+function is31Flavors(originalFlavors){
+    if(originalFlavors.length === 31){
+        return true;
+    }else{
+        return false;
+    }
 }
+console.log(is31Flavors(originalFlavors));
 
 /* Task 2: Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
 
@@ -57,12 +60,11 @@ Your function should add the flavor to the front of the array and console.log th
 
 For example addFlavor("Rainbow Sherbert", originalFlavors) should return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"] */ 
 
-function addFlavor(/*code here*/){
-
-    /*code here*/
+function addFlavor(originalFlavors){
+    return originalFlavors.unshift("Rainbow Sherbert");
 
 }
-
+console.log(addFlavor());
 
 /* Task 3: Houston, we have a problem! There are now 32 flavors in the array! Your task is to remove an item from the end of the array. 
 
